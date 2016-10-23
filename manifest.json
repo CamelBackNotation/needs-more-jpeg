@@ -1,0 +1,11 @@
+{
+  "name": "Stop posting plain text photos",
+  "description": "JUst stop it please god why",
+  "version": "0.1",
+  "minimum_chrome_version": "16.0.884",
+  "permissions": ["downloads", "tabs", "<all_urls>"],
+  "browser_action": {"default_popup": "popup.html"},
+  "manifest_version": 2,
+  // Incredibly incredibly insecure. Please don't ever use this plugin forreal, please
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; img-src 'self' data: blob:; object-src 'self' blob: data:;"
+}
